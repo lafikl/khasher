@@ -20,7 +20,7 @@ func main() {
     size_of_table := uint32(67)
     hashes, err := kh.Hash([]byte("Donald E.K"), size_of_table)
     if err != nil {
-        t.Fatal(err)
+        panic(err)
     }
     fmt.Println(hashes)
 }
